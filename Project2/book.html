@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contact-container">
+  <h1 style="text-align: center;margin: 20px;">We've been waiting for you</h1>
+  <h5 style="text-align: center;margin: 10px;">
+    We want hear from you . Let us know how we can help
+</h5>
+  <div class="form">
+
+    <div class="one">
+      <h5 style="margin: 2px;">
+          Send us a Message
+      </h5>
+    </div>  
+    <div class="formls">
+      <form>
+        <!-- js -->
+        <input type="text" name="first name" placeholder="Enter Your Name " id="fname" onchange="upperCase()"/>
+        <script>
+          function upperCase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+          }
+          </script>
+        <br />
+    
+        <input type="number" name="number"  placeholder="Phone Number "  />
+        <br />
+        <input type="mail" name="email" placeholder="Email " />
+        <br />
+        
+        <input type="date" name="birthday" />
+        <br />
+
+        <label for="" style="margin-bottom: 10px;">Destination</label>
+        <select name="" id="">
+          <option value="">Peru</option>
+          <option value="">Greece</option>
+          <option value="">Italie</option>
+          <option value="">Switzerland</option>
+
+        </select>
+
+        <button style="margin-top: 10px;">Submit</button>
+        
+        <!-- <textarea  cols="80" rows="20"></textarea> <br>
+        <input type="submit" value="Submit" /> -->
+    
+    
+      </form>
+    </div>
+  </div>
+
+ 
+</body>
+</html>

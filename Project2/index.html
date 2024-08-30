@@ -19,15 +19,26 @@
               </div>
             <div class="navb-center">
               <a> Home  </a>
-              <a> Destination</a>
-              <a> Trip</a>
-              <a> About us</a>
-              <a> Contact</a>
+              <a href="#destination"> Destination</a>
+              <a href="#trip"> Trip</a>
+              <a href="#about"> About us</a>
+              <a href="#contact"> Contact</a>
             </div>
 
             <div class="navb-end">
-              <button style="border: 1px solid #eee; padding: 14px 28px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">Let's Travel</button>
+              <button style="border: 1px solid #eee; padding: 14px 28px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white" type="button" onclick="myFunction()">Let's Travel</button>
               
+                <!-- js -->
+
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+                <script>
+                function myFunction() {
+                  document.getElementById("demo1").innerHTML = "Welcome!";
+                  document.getElementById("demo2").innerHTML = "Do you want to travel with us?";
+                }
+                </script>
+
             </div>
   </div>
   </nav>
@@ -37,7 +48,19 @@
    </div>     
    <div class="end">
       <p style="color: #eee;"> Discover a World of <br> Possibility and Unforgettable Experience</p>
-      <button style="border: 1px solid #eee; padding: 14px 28px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">Book Now</button>
+      <a href="book.html"_blank rel="noopener noreferrer">
+        
+        <button id="myBtn"; style="border: 1px solid #eee; padding: 14px 28px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">Book Now</button>
+        <script>
+          document.getElementById("myBtn").addEventListener("click", function() {
+            alert("Vos Coordonnées!");
+          });
+          </script>
+          
+
+
+
+      </a>
   </div>
   </div>
   <div class="text-line">
@@ -45,33 +68,33 @@
 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color: #afaeae;">FEATURED DESTINATION</h5>
   </div>
   <div class="main">
-    <h2> Embark a Journey of Discovery and <span style="color: #afaeae;">Adventure as <br>You Explore the World's Most Captivating Places .</span> </h2>
+    <h2 onmouseover="style.color='#81cce3'"onmouseout="style.color='black'"; onclick="this.innerHTML='Exploring the world is one of the most enriching experiences life has to offer. The thrill of discovering new cultures, tasting unfamiliar cuisines, and witnessing breathtaking landscapes can ignite a sense of wonder and adventure in even the most seasoned traveler. From bustling cities to serene natural wonders, the world is filled with places waiting to be explored. Whether you’re dreaming of a tropical escape, an urban adventure, or a deep dive into history, there’s always a destination that can capture your imagination.'"> Embark a Journey of Discovery and <span style="color: #afaeae;">Adventure as <br>You Explore the World's Most Captivating Places .</span> </h2>
   </div>
 
-  <div class="under">
+  <div class="under" id="destination">
       <div class="lists">
-          <div class="list1">
+          <div onclick="changeContent('santorini.jpg')" class="list1">
             <h3> Santorini,Greece  </h3> 
             <div class="btns">
               <button style="border: 1px solid black; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: black">SWIMMING</button>
               <button style="border: 1px solid #eee; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: rgb(105, 94, 94)">5+</button>
             </div>
           </div>
-            <div class="list1">
+            <div onclick="changeContent('Machu Picchu,Peru.jpg')" class="list1">
             <h3> Machu Picchu,Peru</h3> 
             <div class="btns">
               <button style="border: 1px solid black; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: black">EXPLORING</button>
               <button style="border: 1px solid #eee; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: rgb(105, 94, 94)">4+</button>
             </div>
           </div>
-          <div class="list1">
+          <div onclick="changeContent('Raja Ampat,Indonesia.jpg')"  class="list1">
             <h3> Raja Ampat,Indonesia  </h3> 
             <div class="btns">
               <button style="border: 1px solid black; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: black">SNORKLING</button>
               <button style="border: 1px solid #eee; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: rgb(105, 94, 94)">3+</button>
             </div>
           </div>
-          <div class="list1">
+          <div onclick="changeContent('Sydney,Australia.jpg')" class="list1">
             <h3>Sydney,Australia </h3> 
             <div class="btns">
               <button style="border: 1px solid black; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: black">SIGHTSEEING</button>
@@ -81,7 +104,7 @@
         </div>
 
         <div class="imgg">
-          <img src="./santorini.jpg" width="700" >
+          <img id="image" src="./santorini.jpg" width="700" >
         </div>
   </div>
 
@@ -90,16 +113,16 @@
    <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color: #afaeae;">OUR TRIP</h5>
   </div>
   
-  <div class="adventure">
+  <div class="adventure" id="trip">
     <div class="tittle">
-      <h1> Begin Your Unforgettable Adventures with US</h1>
+      <h1  onmouseover="style.color='#8fb2ff'"onmouseout="style.color='black'"; onclick="this.innerHTML='We have assembled the single most amazing team of professionals working as a unit and combining their expertise in different areas to provide the safest and best ever Zip Line activity you can do - even if you are not a professional athlete.'"> Begin Your Unforgettable Adventures with US</h1>
     </div>
     <div class="imggg">
       <div class="img1">
-        <img src="./img11.jpeg" width="320" >
+        <img src="./waterfall-7929685_960_720.jpg" width="320" >
         <div class="book">
           <h6 style="margin: 4px;">Book By</h6>
-          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">3.6 Travellers</button>
+          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">3.6k Travellers</button>
 
         </div>
         <h6> Costa Rica Adventure Expedition</h6>
@@ -109,10 +132,10 @@
         </svg> North America</p>
       </div>
       <div class="img1">
-        <img src="./img12.webp" width="320"  >
+        <img src="./eibsee-7352987_960_720.jpg" width="320"  >
         <div class="book">
           <h6 style="margin: 4px;">Book By</h6>
-          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">5.9 Travellers</button>
+          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">5.9k Travellers</button>
 
         </div>
         <h6> Greek Island Hopping Experience </h6>
@@ -123,10 +146,10 @@
         Southeast Europe </p>
       </div>
       <div class="img1">
-        <img src="./img13.jpg" width="320" >
+        <img src="./mountain-7866362_1280.webp" width="320" >
         <div class="book">
           <h6 style="margin: 4px;">Book By</h6>
-          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">4.8 Travellers</button>
+          <button style="border: 1px solid #eee; padding: 10px 20px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: white">4.8k Travellers</button>
 
         </div>
         <h6> Alpine Escape Great Holiday </h6>
@@ -146,12 +169,25 @@
 <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color: #afaeae;">TESTIMONIALS</h5>
   </div>
 
-  <div class="cmntr">
+  <div class="cmntr" id="about">
+
     <div class="cmntr1">
-     <h1> Don't Just Take <br> Our Word For It, <br> See What Our Travelers Say </h1> 
+     <h1   onmouseover="mOver(this)" onmouseout="mOut(this)" ; style="margin-top: 0;"> Don't Just Take <br> Our Word For It, <br> See What Our Travelers Say </h1> 
      <p>Discover what our clients have to say about their incredible travel experiences with us. Read  testimonials from satisfied travellers and let their stories inspire your text adventure. </p>
      <button style="border: 1px solid black; padding: 4px 18px; border-radius: 20px; backdrop-filter: blur(2px);background-color: transparent; color: black">View All</button>
+     <script>
+      function mOver(obj) {
+        obj.innerHTML = "Why We Are The Best"
+      }
+      
+      function mOut(obj) {
+        obj.innerHTML = "Don't Just Take <br> Our Word For It, <br> See What Our Travelers Say"
+      }
+      </script>
     </div> 
+
+
+
     <div class="cmntr2">
       <div class="icon">
        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
@@ -161,9 +197,16 @@
     </div>
       <p> Our adventure with Donalodah was nothing short of extraordinary. From the moment we contacted them to the end of our trip,every detail was meticulously planned and executed flawlessly.Their personalized service truly made us feel like VIPs, and the memories we created will last a lifetime. We can't wait to book our next adventure with them! 
       </p>
-    
+      <div class="commnt">
+        <img src="./user.jpg" alt="">
+        <div style="display: flex;flex-direction: column;">
+
+        <h6>Ali</h6>
+        <h6>bique</h6>
+        </div>
+      </div>
     </div>
-    <div class="cmntr3">
+    <div class="cmntr2">
       <div class="icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
@@ -171,20 +214,30 @@
        </svg>
       </div>
        <p> 
-         Our adventure with Donalodah was nothing short of extraordinary. From the moment we contacted them to the end of our trip,every detail was meticulously planned and executed flawlessly.Their personalized service truly made us feel like VIPs, and the memories we created will last a lifetime. We can't wait to book our next adventure with them! 
+        Iam writing to express my heartfelt appreciation for the exceptional service and assistance provided by Dolanadoh  during my recent experience in booking train travel to Uzbekistan different cities for me and my family members.
+        The level of professionalism, efficiency, and customer care demonstrated by you truly made a positive impact on my travel arrangement. 
        </p>
-     
+       <div class="commnt">
+        <img src="./aa.jpg" alt="">
+        <div style="display: flex;flex-direction: column;">
+          <h6>Bill</h6>
+          <h6>Boston</h6>
+        </div>
+      </div>
     </div>
   </div>
   
+
+
+
   <div class="text-line">
     <div id="line"></div>
    <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif ; color: #afaeae;">BEGIN YOUR JOURNEY </h5>
   </div>
-
+<div class="container-footer">
   <div class="final">
     <div class="tittle"> 
-      <h1> Let's Jus Get Travel <br> Around The World</h1>
+      <h1 style="text-align: center;"> Let's Just Get Travel <br> <span style="display:flex ;align-items: center;justify-content: center;margin: 25px;"> Ar <img class="rounded-img" src="./around.jpg" alt="" > und The World</span></h1>
     </div>
     <div class="parg">
       <p> Ready to turn your travel dreams into reality? Get in toutch with us today and let's start planning your next adventure.</p>
@@ -193,7 +246,7 @@
       <button style="border: 1px solid black; padding: 14px 28px; border-radius: 20px; backdrop-filter: blur(2px);background-color: black; color: white">Join The Trip</button>
     </div>
   </div>
-  <div class="touch">
+  <div class="touch" id="contact">
     <div class="mail">
       <h4>Get in touch with us <br> connect@dolanadoh.travel</h4>
     </div>
@@ -206,9 +259,35 @@
     </div>
   </div>
   <div class="dolana">
-    <h1 style="margin: 0;padding: 0;">Dolanadoh</h1>
+    <h1 style="margin: 0;padding: 0;color: white;">Dolanadoh</h1>
   </div>
 
+</div>
+
+
+<div class="wel">
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="padding: 8px;">
+  Welcome!</div>
+  
+  <script>
+  function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Visit us again";
+  }
+  
+  function mUp(obj) {
+    obj.style.backgroundColor="#1aab44";
+    obj.innerHTML="Thank You For Your Confidence";
+  }
+  </script>
+
+</div>
+  
+  
+
+
+
+ <script src="script.js"></script>
  
 </body>
 </html>

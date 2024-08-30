@@ -4,6 +4,10 @@ body{
     background: linear-gradient(to left , #e8eaf9 , #fff);
 }
 
+h6{
+    margin: 0;
+}
+
 .begin{
     display: flex;
     align-items: center;
@@ -15,6 +19,8 @@ body{
 
 .navb-center a {
     padding-left: 24px;
+    color: white;
+    text-decoration: none;
 }
 .navb-end{
     border: 15px;
@@ -112,6 +118,12 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 15px #e2dcdc;
+
+}
+
+.list1:hover{
+    cursor: pointer;
+    background-color: #eee;
 }
 .tittle{
     display: flex;
@@ -163,29 +175,44 @@ body{
     max-height: 660px;
     padding: 24px ;
     justify-content: space-between;
-    padding-right: 40px;
-    
- 
-   
+        
 }
 .cmntr1{
-    margin-top: 120px;
-    margin-bottom: 160px;
+     /* margin-top: 120px; */
+    
     border-radius: 16px;
+    padding: 14px;
     
 }
 .cmntr2{
-    margin-top: 120px;
+    /* margin-top: 120px; */
     background-color: #dfd9d9;
     border-radius: 16px;
-    padding-right: 40px;
-    
+    padding: 14px;
+    margin-left: 16px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .cmntr3{
-    margin-top: 120px;
+    /* margin-top: 120px; */
     background-color: #dfd9d9;
     border-radius: 16px;
+    padding: 14px;
+    margin-left: 16px;
  
+}
+
+.commnt{
+    display:flex ;
+}
+
+.commnt img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right:20px ;
 }
 .icon{
     display: flex;
@@ -197,19 +224,18 @@ body{
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 }
 .touch{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
     padding: 40px;
     margin-top: 46px;
     
 }
-/* .navbb{
-  
-    padding-left: 99px;
-    
-} */
+
 .navbb a{
   
     padding-left: 120px;
@@ -221,3 +247,88 @@ align-items: center;
     
 }
 
+.container-footer{
+    background-image: url('./dolanadoh.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+.rounded-img{
+    border-radius: 20px;
+    height:32px; 
+    width:180px;
+    margin: 0px 10px;
+}
+
+.parg p{
+    margin-top: 0;
+    padding: 0px 180px;
+    text-align: center;
+    color:#fff ;
+}
+
+
+.one{
+    margin: 20px 0px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px;
+}
+
+.formls{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,select {
+    margin: 0px;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    border-bottom: 2px solid #bbb;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+form button{
+    padding: 10px 36px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0 ,.5);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
+    background: linear-gradient(to left , #e8eaf9 , #fff);
+    border: none;
+}
+
+::placeholder{
+    color: black;
+}
+
+#contact-container{
+    background: linear-gradient(to right , #e8eaf9 , #fff);
+
+}
+
+.wel{
+    display: flex;
+    justify-content: end;
+    
+    
+}
